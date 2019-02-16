@@ -1,0 +1,27 @@
+{
+  "name": "github-card",
+  "version": "0.0.0",
+  "description": "a web component to show a profile-card for your github account",
+  "author": "rejas",
+  "license": "MIT",
+  "main": "src/github-card.js",
+  "homepage": "https://github.com/rejas/github-card#readme",
+  "scripts": {
+    "start": "browser-sync start --server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rejas@github.com/rejas/github-card.git"
+  },
+  "keywords": [
+    "github",
+    "webcomponent"
+  ],
+  "bugs": {
+    "url": "https://github.com/rejas/github-card/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}
