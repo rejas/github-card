@@ -2,8 +2,8 @@ customElements.define('github-card', class extends HTMLElement {
 
     constructor() {
         super();
-        this.shadowRoot = this.attachShadow({mode: 'open'});
-        this.shadowRoot.innerHTML = `
+        let shadowRoot = this.attachShadow({mode: 'open'});
+        shadowRoot.innerHTML = `
             <style>
                 :host {
                     display: inline-block;
