@@ -13,7 +13,7 @@ customElements.define('github-card', class extends HTMLElement {
                     font-family: "Helvetica", Arial, sans-serif;
                     display: inline-block;
                     width: 265px;
-                    height: 320px;
+                    height: 300px;
                     overflow: hidden;
                     border-radius: 6px;
                     position: relative;

@@ -1,20 +1,14 @@
 # &lt;github-card&gt;
 
-> A web component to show a profile-card for your Github account.
+a web component to show a profile-card for your github account
+
+based on code by <a href="http://pazguille.me/">Guille Paz</a>
 
 ## How-to
 ```html
-<github-card user="pazguille"></github-card>
+<github-card user="rejas"></github-card>
 ```
 ![Example](assets/example.png)
 
-## Maintained by
-- Guille Paz (Front-end developer | Web standards lover)
-- E-mail: [guille87paz@gmail.com](mailto:guille87paz@gmail.com)
-- Twitter: [@pazguille](http://twitter.com/pazguille)
-- Web: [http://pazguille.me](http://pazguille.me)
-
 ## License
 Licensed under the MIT license.
-
-Copyright (c) 2014 [@pazguille](http://twitter.com/pazguille).
