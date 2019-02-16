@@ -6,7 +6,7 @@
 ```html
 <github-card user="pazguille"></github-card>
 ```
-![Example](src/assets/example.png)
+![Example](assets/example.png)
 
 ## Maintained by
 - Guille Paz (Front-end developer | Web standards lover)
