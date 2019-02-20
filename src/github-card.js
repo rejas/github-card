@@ -1,4 +1,4 @@
-customElements.define('github-card', class extends HTMLElement {
+class GithubCard extends HTMLElement {
 
     constructor() {
         super();
@@ -182,4 +182,6 @@ customElements.define('github-card', class extends HTMLElement {
         usr.querySelector('.user-repos-url').href = user.html_url.concat('?tab=repositories');
         usr.querySelector('.user-followers-url').href = user.html_url.concat('/followers');
     }
-});
+}
+
+customElements.define('github-card', GithubCard);
