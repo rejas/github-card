@@ -10,10 +10,12 @@ class GithubCard extends HTMLElement {
                     --ghc-primarycolor: #222;
                     --ghc-secondarycolor: #fff;
                     --ghc-textcolor: #999;
+                    --ghc-fontsize: 1rem;
                 }
 
                 .user {
                     font-family: "Helvetica", Arial, sans-serif;
+                    font-size: var(--ghc-fontsize);
                     display: inline-block;
                     width: 265px;
                     height: 300px;
@@ -23,7 +25,6 @@ class GithubCard extends HTMLElement {
                     background-color: var(--ghc-primarycolor);
                     text-align: center;
                     color: var(--ghc-secondarycolor);
-                    font-weight: 100;
                     transition: background 1000ms ease-out;
                 }
 
@@ -64,11 +65,11 @@ class GithubCard extends HTMLElement {
                 }
 
                 .user-name {
-                    font-size: 24px;
+                    font-size: 1.5em;
                 }
 
                 .user-account {
-                    font-size: 16px;
+                    font-size: 1em;
                     color: var(--ghc-textcolor);
                     margin: 5px 0;
                 }
@@ -86,7 +87,7 @@ class GithubCard extends HTMLElement {
                 .user-repos,
                 .user-followers {
                     display: inline-block;
-                    font-size: 22px;
+                    font-size: 1.25em;
                     color: var(--ghc-textcolor);
                 }
 
@@ -96,9 +97,8 @@ class GithubCard extends HTMLElement {
                     text-transform: uppercase;
                     color: var(--ghc-textcolor);
                     display: block;
-                    font-size: 11px;
-                    font-weight: normal;
-                    line-height: 1.7em;
+                    font-size: 0.5em;
+                    line-height: 1.5em;
                 }
 
                 .spinner {
