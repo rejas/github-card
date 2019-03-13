@@ -49,7 +49,7 @@ input {
   color: #222;
   font-size: 18pt;
   width: 300px;
-  padding: 10px 12px;
+  padding: 9px 12px;
   border-radius: 6px;
   border: 1px solid #CCC;
   vertical-align: middle;
@@ -62,11 +62,9 @@ button {
   text-align: center;
   font-size: 18pt;
   line-height: 1em;
-  background-color: #f5f5f5;
   cursor: pointer;
   border: 1px solid #CCC;
   vertical-align: middle;
-  margin-top: 15px;
 }
 
 footer {
@@ -115,7 +113,7 @@ footer {
  */
 @media all and (min-width:40em) {
   button {
-    border-radius: 0px 6px 6px 0px;
+    border-radius: 0 6px 6px 0;
     margin-top: 0;
     margin-left: -10px;
   }
@@ -140,4 +138,3 @@ footer {
     width: 600px;
   }
 }
-
