@@ -9,11 +9,12 @@ class GithubCard extends HTMLElement {
                     --ghc-primarycolor: #222;
                     --ghc-secondarycolor: #fff;
                     --ghc-textcolor: #999;
+                    --ghc-fontfamily: Helvetica, Arial;
                     --ghc-fontsize: 1rem;
                 }
 
                 .user {
-                    font-family: "Helvetica", Arial, sans-serif;
+                    font-family: var(--ghc-fontfamily), sans-serif;
                     font-size: var(--ghc-fontsize);
                     display: inline-block;
                     width: 265px;
@@ -49,12 +50,11 @@ class GithubCard extends HTMLElement {
                 }
 
                 .user-avatar img {
-                    border-radius: 100%;
                     height: 120px;
                     width: 120px;
-                    border: 3px solid var(--ghc-secondarycolor);
-                    vertical-align: middle;
                     background-color: var(--ghc-secondarycolor);
+                    border: 3px solid var(--ghc-secondarycolor);
+                    border-radius: 100%;
                 }
 
                 dd.user-name,
