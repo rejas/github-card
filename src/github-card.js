@@ -46,7 +46,7 @@ class GithubCard extends HTMLElement {
 
                 dd.user-avatar {
                     display: inline-block;
-                    margin: 20px 0 10px;
+                    margin: 1em 0;
                 }
 
                 .user-avatar img {
@@ -59,7 +59,7 @@ class GithubCard extends HTMLElement {
 
                 dd.user-name,
                 dd.user-account {
-                    margin: 5px 0;
+                    margin: 0 0 0.5em;
                 }
 
                 .user-name {
@@ -69,7 +69,6 @@ class GithubCard extends HTMLElement {
                 .user-account {
                     font-size: 1em;
                     color: var(--ghc-textcolor);
-                    margin: 5px 0;
                 }
 
                 .user-stats {
@@ -79,7 +78,7 @@ class GithubCard extends HTMLElement {
                 }
 
                 .user-stats dd {
-                    padding: 10px 20px;
+                    padding: 0.5em 1em;
                 }
 
                 .user-repos,
