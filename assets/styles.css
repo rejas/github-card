@@ -79,10 +79,8 @@ footer {
   text-decoration: none;
 }
 
-#twitter {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+#cards {
+    display: inline-block;
 }
 
 #github-button {
