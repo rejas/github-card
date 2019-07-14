@@ -16,17 +16,16 @@ class GithubCard extends HTMLElement {
                 .user {
                     font-family: var(--ghc-fontfamily), sans-serif;
                     font-size: var(--ghc-fontsize);
-                    display: inline-block;
-                    width: 265px;
-                    height: 300px;
-                    overflow: hidden;
+                    display: flex;
+                    flex-flow: column;
+                    min-width: 250px;
                     border: 1px solid var(--ghc-primarycolor);
                     border-radius: 6px;
                     position: relative;
-                    background-color: var(--ghc-primarycolor);
                     text-align: center;
                     color: var(--ghc-secondarycolor);
                     transition: background 1000ms ease-out;
+                    background: linear-gradient(to bottom, white 0%, white 5rem, var(--ghc-primarycolor) 5rem, var(--ghc-primarycolor) 100%);
                 }
 
                 .user dl,
@@ -39,53 +38,49 @@ class GithubCard extends HTMLElement {
                 }
 
                 .user-data {
-                    background: var(--ghc-secondarycolor) url('data:image/svg+xml;utf8,<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>') no-repeat 5px 5px;
-                    background-size: 25px;
-                    height: 85px;
+                    background: var(--ghc-secondarycolor) url('data:image/svg+xml;utf8,<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>') no-repeat 0.25rem 0.25rem;
+                    background-color: transparent;
+                    background-size: 1.5rem;
                 }
 
-                dd.user-avatar {
-                    display: inline-block;
-                    margin: 1em 0;
+                .user-avatar {
+                    padding: 1rem 0;
                 }
 
                 .user-avatar img {
-                    height: 120px;
-                    width: 120px;
-                    background-color: var(--ghc-secondarycolor);
+                    height: 7rem;
+                    width: 7rem;
                     border: 3px solid var(--ghc-secondarycolor);
                     border-radius: 100%;
                 }
 
-                dd.user-name,
-                dd.user-account {
-                    margin: 0 0 0.5em;
+                .user-name,
+                .user-account {
+                    margin: 0 0 0.5rem;
                 }
 
                 .user-name {
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
+                    padding-bottom: 0.5rem;
                 }
 
                 .user-account {
-                    font-size: 1em;
                     color: var(--ghc-textcolor);
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
                 }
 
                 .user-stats {
+                    padding: 0.5rem 2rem;
                     border-top: 1px groove var(--ghc-textcolor);
-                    position: relative;
-                    top: 155px;
-                }
-
-                .user-stats dd {
-                    padding: 0.5em 1em;
+                    display: flex;
                 }
 
                 .user-repos,
                 .user-followers {
-                    display: inline-block;
-                    font-size: 1.25em;
                     color: var(--ghc-textcolor);
+                    display: inline-block;
+                    font-size: 1.25rem;
                 }
 
                 .user-repos::after,
@@ -94,23 +89,24 @@ class GithubCard extends HTMLElement {
                     text-transform: uppercase;
                     color: var(--ghc-textcolor);
                     display: block;
-                    font-size: 0.5em;
-                    line-height: 1.5em;
+                    font-size: 0.625rem;
+                    line-height: 1.25rem;
                 }
 
                 .spinner {
                     background: var(--ghc-primarycolor) url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzgiIGhlaWdodD0iMzgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDEpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGNpcmNsZSBzdHJva2Utb3BhY2l0eT0iLjUiIGN4PSIxOCIgY3k9IjE4IiByPSIxOCIvPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOCI+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIiB0eXBlPSJyb3RhdGUiIGZyb209IjAgMTggMTgiIHRvPSIzNjAgMTggMTgiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjwvZz48L3N2Zz4=) no-repeat center center;
                 }
 
-                a.user-github-url,
-                a.user-repos-url,
-                a.user-followers-url {
+                .user-github-url,
+                .user-repos-url,
+                .user-followers-url {
                     text-decoration: none;
+                    flex-basis: 50%;
                 }
             </style>
 
             <article class="user spinner">
-                <dl class="user-data" hidden>
+                <dl class="user-data">
                     <dt>Avatar:</dt>
                     <dd class="user-avatar">
                         <img src="" alt="User avatar">
@@ -124,13 +120,13 @@ class GithubCard extends HTMLElement {
                         <dd class="user-account"></dd>
                     </a>
                 </dl>
-                <dl class="user-stats" hidden>
-                    <dt>Repos</dt>
+                <dl class="user-stats">
+                    <dt>Repos:</dt>
                     <a class="user-repos-url">
                         <dd class="user-repos" data-stats="repos"></dd>
                     </a>
 
-                    <dt>Followers</dt>
+                    <dt>Followers:</dt>
                     <a class="user-followers-url">
                         <dd class="user-followers" data-stats="followers"></dd>
                     </a>
