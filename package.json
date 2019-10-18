@@ -5,9 +5,9 @@
   "author": "rejas@github.com",
   "license": "MIT",
   "main": "src/github-card.js",
-  "bugs": "https://github.com/rejas/github-card/issues",
-  "homepage": "https://github.com/rejas/github-card#readme",
-  "repository": "github:rejas/github-card.git",
+  "bugs": "https://github.com/rejas/github-webcomponents/issues",
+  "homepage": "https://github.com/rejas/github-webcomponents#readme",
+  "repository": "https://github.com/rejas/github-webcomponents.git",
   "scripts": {
     "start": "browser-sync start --server",
     "test": "echo \"Error: no test specified\" && exit 1"
